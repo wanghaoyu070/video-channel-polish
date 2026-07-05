@@ -2,6 +2,8 @@
 
 一个面向中文录屏口播视频的 Codex Skill，用来把原始演示素材处理成适合小红书和微信视频号发布的成品。
 
+![Video Channel Polish 工作流](assets/readme/workflow-overview.png)
+
 适合这类视频：
 
 - 录屏 + 右下角人像的工具演示
@@ -38,6 +40,20 @@
 - 可选：带封面片头的视频
 
 默认不会把封面强行接到视频开头，除非你明确要求。
+
+## 效果示例
+
+### 封面
+
+封面默认从视频前几秒选真实画面，不额外换背景、不模糊、不压暗，只叠加黑色圆角标题条和白色大字。
+
+![黑底白字封面示例](assets/readme/cover-example.png)
+
+### 字幕
+
+字幕默认贴近底部，减少对演示界面和右下角人像的遮挡。
+
+![字幕位置对比](assets/readme/subtitle-position.png)
 
 ## 安装
 
@@ -97,6 +113,8 @@ git pull
 
 这个 Skill 会默认区分两个平台：
 
+![小红书和微信视频号文案规则](assets/readme/platform-copy.png)
+
 ### 小红书
 
 - 更像个人经验分享
@@ -129,6 +147,12 @@ git pull
 ├── SKILL.md
 ├── agents/
 │   └── openai.yaml
+├── assets/
+│   └── readme/
+│       ├── cover-example.png
+│       ├── platform-copy.png
+│       ├── subtitle-position.png
+│       └── workflow-overview.png
 ├── references/
 │   └── style_defaults.md
 └── scripts/
